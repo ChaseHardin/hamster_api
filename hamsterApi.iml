@@ -5,6 +5,7 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="GOPATH &lt;hamster_api&gt;" level="project" />
+    <orderEntry type="library" name="GOPATH &lt;hamsterApi&gt;" level="project" />
+    <orderEntry type="library" name="GOPATH &lt;hamsterApi&gt;" level="project" />
   </component>
 </module>
