@@ -4,7 +4,7 @@ import (
 	"github.com/gorilla/mux"
 	"log"
 	"net/http"
-	"hamsterApi/app/features/helloWorld"
+	"github.com/hamsterApi/app/features/helloWorld"
 )
 
 func main () {
