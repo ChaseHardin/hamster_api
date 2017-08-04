@@ -1,4 +1,4 @@
-package hello_world
+package helloWorld
 
 import (
 	"testing"
@@ -48,6 +48,3 @@ func TestShouldReturnJsonContentType(t *testing.T) {
 		t.Errorf("handler retuned wrong content type: Expected: %v Actual: %v", expected, actual)
 	}
 }
-
-
-
