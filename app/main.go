@@ -1,5 +1,16 @@
 package main
 
+import (
+	"github.com/gorilla/mux"
+	"log"
+	"net/http"
+	"github.com/hamsterApi/app/features/helloWorld"
+)
+
 func main () {
-	print("Hello World!")
+	router := mux.NewRouter()
+
+	router.HandleFunc("/greet", helloWorld.GreetingHandler).Methods("GET")
+
+	log.Fatal(http.ListenAndServe(":4020", router))
 }
