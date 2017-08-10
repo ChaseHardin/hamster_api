@@ -31,3 +31,27 @@ This project is composed of two branches:
 Developers are to develop features in local branches and make pull requests to merge with the `Dev` branch when ready. 
 
 When code has been accepted it will be merged into the `Master` branch.  
+
+## Deploy Api
+We are using `Heroku` to host the hamster Api. These were the steps taken to create/deploy project to `Heroku`.
+
+## Step 1
+Navigate to the `/app` directory
+
+Install Godep:
+```go get github.com/kr/godep```
+
+Save Dependencies:
+```godep save```
+
+Add/Commit to `git`
+
+## Step 2
+If this is a new application, create the `Heroku` app.
+```heroku create```
+
+Push code to `Heroku`
+```git push heroku master```
+
+## Additional Details
+https://mmcgrana.github.io/2012/09/getting-started-with-go-on-heroku.html
