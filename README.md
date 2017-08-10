@@ -32,7 +32,7 @@ Developers are to develop features in local branches and make pull requests to m
 
 When code has been accepted it will be merged into the `Master` branch.  
 
-## Deploy Api
+## Deploy Api (API can be found here: https://sheltered-chamber-13682.herokuapp.com/greet)
 We are using `Heroku` to host the hamster Api. These were the steps taken to create/deploy project to `Heroku`.
 
 ## Step 1
