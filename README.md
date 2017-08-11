@@ -37,7 +37,7 @@ We are using `Heroku` to host the hamster Api. These were the steps taken to cre
 API can be found here: https://sheltered-chamber-13682.herokuapp.com/greet
 
 ## Step 1
-Install Heroku CLI. Install can be found [a here](https://devcenter.heroku.com/articles/getting-started-with-go#set-up)
+Install Heroku CLI. Install can be found [here](https://devcenter.heroku.com/articles/getting-started-with-go#set-up)
 
 ## Step 2
 Navigate to the `/app` directory
@@ -58,4 +58,4 @@ Push code to `Heroku`
 ```git push heroku master```
 
 ## Additional Details
-https://mmcgrana.github.io/2012/09/getting-started-with-go-on-heroku.html
+[Getting Started With Go On Heroku](https://mmcgrana.github.io/2012/09/getting-started-with-go-on-heroku.html)
