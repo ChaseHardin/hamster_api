@@ -37,6 +37,9 @@ We are using `Heroku` to host the hamster Api. These were the steps taken to cre
 API can be found here: https://sheltered-chamber-13682.herokuapp.com/greet
 
 ## Step 1
+Install Heroku CLI. Install can be found [a here](https://devcenter.heroku.com/articles/getting-started-with-go#set-up)
+
+## Step 2
 Navigate to the `/app` directory
 
 Install Godep:
@@ -47,7 +50,7 @@ Save Dependencies:
 
 Add/Commit to `git`
 
-## Step 2
+## Step 3
 If this is a new application, create the `Heroku` app.
 ```heroku create```
 
