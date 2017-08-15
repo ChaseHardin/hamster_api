@@ -1,10 +1,11 @@
 package places
 
+// Place comment.
 type Place struct {
-	Name string
+	Name     string
 	FoodType string
-	Price int
-	Rating float32
+	Price    int
+	Rating   float32
 	Distance float32
 	ImageUrl string
 }
