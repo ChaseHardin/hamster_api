@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -16,5 +17,12 @@ func main() {
 	router.HandleFunc("/greet", helloWorld.GreetingHandler).Methods("GET")
 	router.HandleFunc("/places", places.GetPlaces).Methods("GET")
 
-	log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), router))
+	port := os.Getenv("PORT")
+
+	if len(port) == 0 {
+		port = "4020"
+	}
+
+	fmt.Println("Listening at http://localhost:" + port)
+	log.Fatal(http.ListenAndServe(":"+port, router))
 }
