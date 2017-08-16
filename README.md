@@ -33,7 +33,7 @@ Developers are to develop features in local branches and make pull requests to m
 When code has been accepted it will be merged into the `Master` branch.  
 
 ## Deploy API
-We are using `Heroku` to host the hamster Api. These were the steps taken to create/deploy project to `Heroku`.
+We are using Heroku to host the hamster Api. These were the steps taken to create/deploy project to Heroku.
 API can be found here: https://sheltered-chamber-13682.herokuapp.com/greet
 
 ## Step 1
@@ -48,14 +48,16 @@ Install Godep:
 Save Dependencies:
 ```godep save```
 
-Add/Commit to `git`
+Add/Commit to git
+'''git add app && git commit -m "Initial build/web subtree commit"'''
 
 ## Step 3
-If this is a new application, create the `Heroku` app.
+If this is a new application, create the Heroku app.
 ```heroku create```
 
-Push code to `Heroku`
-```git push heroku master```
+Push code to Heroku
+
+```git subtree push --prefix app heroku master```
 
 ## Additional Details
 [Getting Started With Go On Heroku](https://mmcgrana.github.io/2012/09/getting-started-with-go-on-heroku.html)
