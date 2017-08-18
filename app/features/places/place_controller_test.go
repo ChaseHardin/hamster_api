@@ -9,7 +9,7 @@ import (
 )
 
 func BeforeEachGetPlaces() *httptest.ResponseRecorder {
-	req, _ := http.NewRequest("GET", "/places", nil)
+	req, _ := http.NewRequest("GET", "/places/?location=41.584272,-93.6376587", nil)
 
 	recorder := httptest.NewRecorder()
 	handler := http.HandlerFunc(GetPlaces)

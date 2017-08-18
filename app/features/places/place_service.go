@@ -12,13 +12,12 @@ import (
 
 var (
 	apiKey    = flag.String("key", "AIzaSyBAG-KEfEG9SyDKCuHvoOIeMD1hOqwtdtk", "API Key for using Google Maps API.")
-	location  = flag.String("location", "41.584627,-93.637551", "The latitude/longitude around which to retrieve place information. This must be specified as latitude,longitude.")
 	radius    = flag.Uint("radius", 1609, "Defines the distance (in meters) within which to bias place results. The maximum allowed radius is 50,000 meters.")
 	placeType = flag.String("type", "restaurant", "Restricts the results to places matching the specified type.")
 )
 
 // GetPlacesService This has a comment.
-func GetPlacesService() (data []Place, err error) {
+func GetPlacesService(requestLocation string) (data []Place, err error) {
 
 	flag.Parse()
 	var client *maps.Client
@@ -34,7 +33,7 @@ func GetPlacesService() (data []Place, err error) {
 		Type:   maps.PlaceType(*placeType),
 	}
 
-	parseLocation(*location, r)
+	parseLocation(requestLocation, r)
 
 	resp, err := client.NearbySearch(context.Background(), r)
 
